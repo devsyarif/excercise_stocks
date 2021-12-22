@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "939189902456",
+    "project_id": "excercise-stocks",
+    "storage_bucket": "excercise-stocks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939189902456:android:08aca9c02cc297d602218d",
+        "android_client_info": {
+          "package_name": "com.example.excercise_stocks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939189902456-e1k5kq6ua2kpf5eflop3n0n88sag2tab.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.excercise_stocks",
+            "certificate_hash": "076963718e59f790b4d599a570a54d79c2ca1ecc"
+          }
+        },
+        {
+          "client_id": "939189902456-kendhf5k9asaovhc8d1esios5a0h3gih.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.excercise_stocks",
+            "certificate_hash": "78d6c921b303f4cd74f9dc538d4300ed301a69c7"
+          }
+        },
+        {
+          "client_id": "939189902456-5b3j6g93e8kti4ofacu1tje2dhs4qmoa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBy3g9r3tV7aYSiHkou7OKkABPwBfF5imw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939189902456-5b3j6g93e8kti4ofacu1tje2dhs4qmoa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
