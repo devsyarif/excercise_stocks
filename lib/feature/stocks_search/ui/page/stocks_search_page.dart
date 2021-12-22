@@ -38,9 +38,11 @@ class StocksSearchPage extends StatelessWidget {
                         ),
                       ),
                       onChanged: (val) {
-                        val.isEmpty
-                            ? BlocProvider.of<StocksFetcherCubit>(context).fetchStock(_user.email)
-                            : BlocProvider.of<StocksFetcherCubit>(context).searchStocks(val);
+                        if (val.isEmpty) {
+                          BlocProvider.of<StocksFetcherCubit>(context).fetchStock(_user.email);
+                        } else if (val.length > 2) {
+                          BlocProvider.of<StocksFetcherCubit>(context).searchStocks(val);
+                        }
                       },
                     ),
                   ),

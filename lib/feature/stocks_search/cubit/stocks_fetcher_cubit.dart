@@ -81,8 +81,13 @@ class StocksFetcherCubit extends Cubit<StocksFetcherState> {
   setWatched(String collectionId, StocksModel stocks) async {
     if (state is StocksFetcherLoaded) {
       StocksFetcherLoaded currentState = state as StocksFetcherLoaded;
+      // untuk merubah element dalam list paging
       int index = currentState.listStocks.indexWhere((e) => e.figi == stocks.figi);
       currentState.listStocks[index] = stocks.copyWith(isWatched: !stocks.isWatched);
+
+      // untuk merubah element pada list tanpa paging[_allStocks]
+      int indexAll = _allStocks.indexWhere((e) => e.figi == stocks.figi);
+      _allStocks[indexAll] = stocks.copyWith(isWatched: !stocks.isWatched);
 
       if (!stocks.isWatched) {
         await _stocksWatchedEntity.addStockWatchedEntity(collectionId, stocks);
